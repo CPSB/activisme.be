@@ -123,7 +123,7 @@
                 We hebben dan ook jullie steun nodig. En zelfs kleine giften helpen. Ze maken bovendien een direct verschil. Ze tonen bovendien aan dat deze samenleving weigert mee te lopen in een beleid dat steeds meer mensen naar de marge verwijst. Niet alleen wij zijn jullie daarvoor dankbaar.
             </p>
             <p>
-                Ga naar de <a href="{{ url('caravan') }}" target="blank">crowdfund pagina</a> voor meer informatie.
+                Ga naar de <a href="{{ route('crowdfund.index') }}" target="blank">crowdfund pagina</a> voor meer informatie.
             </p>
         </section>
     </section>
