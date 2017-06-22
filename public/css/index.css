@@ -1,0 +1,152 @@
+@import url("style.css");
+
+main > .informatie {
+    display: inline-block;
+    background-size: cover;
+    background-image: url("../images/nieuws-background.jpg");
+    border-image-width: 1em;
+    width: calc(99% - 1em);
+    margin: 0.5%;
+    padding-bottom: 2em;
+    border-bottom: solid #4c4b4b 0.5em;
+    border-left: solid #2f2e2e 0.5em;
+    border-top: solid #4c4b4b 0.5em;
+    border-right: solid #2f2e2e 0.5em;
+}
+
+main > .informatie > h1 {
+    color: black;
+    text-align: center;
+    font-size: 3.5em;
+}
+
+main > .informatie > article {
+    display: inline-block;
+    text-align: center;
+}
+
+main > .informatie > article > p {
+    display: inline-block;
+    max-width: 94%;
+    list-style: square;
+    text-align: center;
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+main > .informatie > section {
+    display: inline-block;
+    max-width: 47%;
+    vertical-align: top;
+    margin-left: 2em;
+}
+
+main > .informatie > section > h2 {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    border-bottom: 0.05em solid black;
+    font-size: 2em;
+    margin: 0;
+}
+
+main > .informatie > section > ul {
+    display: block;
+}
+
+main > .informatie > section > ul > li {
+    list-style: square;
+    color: black;
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+main > .acties > section {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    padding: 0 1.2em;
+    width: calc(86% / 4);
+    margin-bottom: 2em;
+}
+
+main > .acties > h1 {
+    color: white;
+    text-align: center;
+    font-size: 3.5em;
+    padding-top: 0.5em;
+}
+
+main > .acties > section > h2 {
+    color: white;
+    text-align: center;
+    border-bottom: 0.05em solid white;
+    font-size: 2em;
+}
+
+main > .acties > section > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+main > .acties > section > ul > li {
+    padding-bottom: 1.2em;
+}
+
+main > .acties > section > ul > li > a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+main > .acties > section > ul > li > a:hover {
+    background: url(../images/menu-hover-wit.png) center no-repeat;
+    transition: all .9s;
+    color: darkslategray;
+}
+
+main > .agenda {
+    display: inline-block;
+    background-image: url("../images/nieuws-background.jpg");
+    background-size: cover;
+    width: calc(99% - 1em);
+    margin: 0.5%;
+    padding-bottom: 2em;
+    border-bottom: solid #4c4b4b 0.5em;
+    border-left: solid #2f2e2e 0.5em;
+    border-top: solid #4c4b4b 0.5em;
+    border-right: solid #2f2e2e 0.5em;
+}
+
+main > .agenda > h1 {
+    color: black;
+    text-align: center;
+    font-size: 3.5em;
+}
+
+main > .agenda > section {
+    display: inline-block;
+    max-width: 80%;
+    margin-left: 10%;
+}
+
+main > .agenda > section > h2 {
+    font-size: 2em;
+    text-align: center;
+}
+
+main > .agenda > section > p {
+    font-size: 1.3em;
+    padding: 0em 0.8em;
+    text-align: center;
+    font-weight: bold;
+}
+
+main > .agenda > section > p:last-child {
+    text-align:center;
+    font-weight: bold;
+    padding-bottom: 1em;
+}
