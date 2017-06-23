@@ -62,13 +62,13 @@
                                         </ul>
                                     </li>
                                 @endif
+                            @else
+                                <li class="{{ Request::is('disclaimer*') ? 'active' : '' }}">
+                                    <a href="{{ route('disclaimer.index') }}">
+                                        <span class="fa fa-legal" aria-hidden="true"></span> Disclaimer
+                                    </a>
+                                </li>
                             @endif
-
-                            <li class="{{ Request::is('disclaimer*') ? 'active' : '' }}">
-                                <a href="{{ route('disclaimer.index') }}">
-                                    <span class="fa fa-legal" aria-hidden="true"></span> Disclaimer
-                                </a>
-                            </li>
 
                             <li class="{{ Request::is('contact*') ? 'active' : '' }} {{ Request::is('backend/contact*') ? 'active' : '' }}">
                                 @if (auth()->check() && auth()->user()->hasRole('Admin'))
