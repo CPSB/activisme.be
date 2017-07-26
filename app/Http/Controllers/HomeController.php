@@ -27,6 +27,7 @@ class HomeController extends Controller
     {
         $this->middleware('banned')->only(['backend']);
         $this->middleware('auth')->only(['backend']);
+        $this->middleware('role:Admin')->only(['backend']);
         $this->middleware('lang');
     }
 
