@@ -14,8 +14,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        $this->call(TypesSeeder::class);
-
         // Ask for db migration refresh, default is no.
         if ($this->command->confirm('Do you wish to refresh migration before seeding, it will clear all old data?')) {
             // Call the php artisan migrate:refresh
@@ -62,6 +60,8 @@ class DatabaseSeeder extends Seeder
             Role::firstOrCreate(['name' => 'User']); 
             $this->command->info('Added only default user role.');
         }
+
+        $this->call(TypesSeeder::class);
     }
 
     /**
