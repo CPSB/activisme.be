@@ -33,6 +33,7 @@ class UserController extends Controller
     public function __construct(User $users)
     {
         $this->middleware('banned');
+        $this->middleware('role:Admin');
         $this->middleware('lang');
 
         $this->users = $users;
