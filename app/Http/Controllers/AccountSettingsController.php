@@ -26,6 +26,7 @@ class AccountSettingsController extends Controller
     {
         $this->middleware('auth');
         $this->middleware('banned');
+        $this->middleware('role:Admin');
         $this->middleware('lang');
     }
 
