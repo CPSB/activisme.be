@@ -44,3 +44,4 @@ Route::group(['middleware' => ['auth']], function() {
 });
 
 Route::resource('crowdfund', 'CrowdfundController');
+Route::resource('link', 'LinksController');

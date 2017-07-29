@@ -4,9 +4,93 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "d7d625891cf5b259adef2f7541de1ca9",
-    "content-hash": "30e69b64a2cf0299f5930cf9999bfc5d",
+    "hash": "cb0d7de263e647e25e6e137cc591494a",
+    "content-hash": "f15537154acb5aef3fa3cb284b51f9ce",
     "packages": [
+        {
+            "name": "adamwathan/bootforms",
+            "version": "v0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/adamwathan/bootforms.git",
+                "reference": "2d5a8baa79cf6818cfa418276567c6ee6f40ed54"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/adamwathan/bootforms/zipball/2d5a8baa79cf6818cfa418276567c6ee6f40ed54",
+                "reference": "2d5a8baa79cf6818cfa418276567c6ee6f40ed54",
+                "shasum": ""
+            },
+            "require": {
+                "adamwathan/form": "^0.9.0",
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "0.9.*",
+                "phpunit/phpunit": "3.7.*",
+                "satooshi/php-coveralls": "dev-master"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "AdamWathan\\BootForms": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Wathan",
+                    "email": "adam.wathan@gmail.com"
+                }
+            ],
+            "description": "Just a Formbuilder with some Bootstrap specific conveniences. Remembers old input, retrieves error messages and handles all your boilerplate Bootstrap markup automatically.",
+            "time": "2017-07-18 15:25:51"
+        },
+        {
+            "name": "adamwathan/form",
+            "version": "v0.9.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/adamwathan/form.git",
+                "reference": "d44534bf812512daa9d5a3b68d0ef7928def99b8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/adamwathan/form/zipball/d44534bf812512daa9d5a3b68d0ef7928def99b8",
+                "reference": "d44534bf812512daa9d5a3b68d0ef7928def99b8",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "require-dev": {
+                "illuminate/support": "4.*",
+                "mockery/mockery": "~0.9",
+                "phpunit/phpunit": "3.7.*",
+                "satooshi/php-coveralls": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "AdamWathan\\Form": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Wathan",
+                    "email": "adam.wathan@gmail.com"
+                }
+            ],
+            "description": "A basic framework agnostic form building package with a few extra niceties like remembering old input and retrieving error messages.",
+            "time": "2017-07-07 16:13:45"
+        },
         {
             "name": "barryvdh/laravel-debugbar",
             "version": "v2.4.0",

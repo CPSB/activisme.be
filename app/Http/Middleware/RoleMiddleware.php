@@ -36,11 +36,11 @@ class RoleMiddleware
             return $next($request);
         }
 
-        if (! is_null($permission)) {
-            if (auth()->user()->can($permission)) {
-                return $next($request);
-            }
-        }
+       if (! is_null($role)) {
+           if (auth()->user()->can($permission)) {
+               return $next($request);
+           }
+       }
 
         return abort(403);
     }

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Actions;
+use App\Links;
 use App\Types;
 use Illuminate\Http\Request;
 
@@ -46,11 +47,11 @@ class HomeController extends Controller
 
         // Data variables;
         $data['title']          = 'Index';
-        $data['mailingActions'] = Actions::where('type_id', $relMailing->id)->orderBy('end_date', 'ASC')->get();
-        $data['links']			= Actions::where('type_id', $relLinks->id)->orderBy('end_date', 'ASC')->get();
-        $data['petitions']		= Actions::where('type_id', $relPetitions->id)->orderBy('end_date', 'ASC')->get();
-        $data['crowdfunds']     = Actions::where('type_id', $relCrowdfund->id)->orderBy('end_date', 'ASC')->get();
-        $data['manifestations'] = Actions::where('type_id', $relManifestation->id)->orderBy('end_date', 'ASC')->get();
+        $data['mailingActions'] = Links::where('type_id', $relMailing->id)->orderBy('action_date', 'ASC')->get();
+        $data['links']			= Links::where('type_id', $relLinks->id)->orderBy('action_date', 'ASC')->get();
+        $data['petitions']		= Links::where('type_id', $relPetitions->id)->orderBy('action_date', 'ASC')->get();
+        $data['crowdfunds']     = Links::where('type_id', $relCrowdfund->id)->orderBy('action_date', 'ASC')->get();
+        $data['manifestations'] = Links::where('type_id', $relManifestation->id)->orderBy('action_date', 'ASC')->get();
 
         return view('welcome', $data);
     }
@@ -62,6 +63,9 @@ class HomeController extends Controller
      */
     public function backend()
     {
-        return view('home');
+        $items      = Links::with(['creator', 'type'])->paginate(25);
+        $categories = Types::all();
+
+        return view('home', compact('items', 'categories'));
     }
 }
